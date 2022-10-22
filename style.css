@@ -32,7 +32,7 @@ p {
   color: #000;
   margin: 0 50px;
   letter-spacing: 2px;
-  font-size: 36px;
+  font-size: 1.6vw;
 }
 
 .highlight {
@@ -79,7 +79,7 @@ h1 {
 
 .toggle-button {
   position: absolute;
-  top: 1.9rem;
+  top: 1.5rem;
   right: 1rem;
   display: none;
   flex-direction: column;
@@ -160,6 +160,9 @@ a:hover {
 .about-box {
   width: 100%;
   height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .front {
@@ -203,6 +206,7 @@ a:hover {
 
   .logo {
     margin-left: 20px;
+    font-size: 16px;
   }
 
   nav .active {
@@ -251,4 +255,81 @@ a:hover {
 }
 
 @media only screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  p {
+    font-size: 16px;
+    margin: 0 10px;
+  }
+
+  p,
+  h1 {
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+
+  .nav-list {
+    display: none;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: center;
+    width: 100%;
+  }
+
+  .logo {
+    margin-left: 20px;
+    font-size: 16px;
+  }
+
+  nav .active {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: center;
+
+    padding-bottom: 30px;
+    transition: height 1s ease-in;
+  }
+
+  .toggle-button {
+    display: flex;
+  }
+
+  .hero {
+    flex-direction: column;
+  }
+
+  .face {
+    width: 80%;
+    height: auto;
+    object-fit: contain;
+    margin: 30px auto;
+    border-radius: 10px;
+  }
+  .reservebtn {
+    margin: 30px auto;
+  }
+  .about {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .about-box {
+    padding-bottom: 50px;
+  }
+
+  .front {
+    width: 80%;
+    margin: 30px auto;
+    border-radius: 10px;
+  }
 }
